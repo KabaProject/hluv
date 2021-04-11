@@ -1,0 +1,71 @@
+@import '../../../styles/colors',
+        '../../../styles/animations/index';
+
+.button{
+    padding: 10px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+    &-link{
+        text-decoration: none;
+    }
+
+    &-link, &-normal{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        
+        & > *:nth-child(2){
+            margin-left: 12px;
+        }
+
+        &__icon{
+            font-size: 20px;
+        }
+    }
+
+    &--primary{
+        background-color: $primary-color;
+
+        & *{
+            color: white;
+        }
+    }
+
+    &-go{
+        width: 265px;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        font-size: 40px;
+        color: $white;
+        font-weight: 600;
+
+        &--enabled, &--loading{
+            background-color: $accent-color;
+            box-shadow: 0 0 40px rgba($color: $accent-color, $alpha: 0.76);   
+        }
+
+        &--enabled{
+            cursor: pointer;
+        }
+
+        &--loading{
+            animation: pulse 0.66s ease infinite alternate;
+            cursor:wait;
+            & > *{
+                animation: spin 0.5s ease-in-out infinite forwards;
+            }
+        }
+
+        &--disabled{
+            background-color: rgba($color: $white, $alpha: 0.1);
+            color: rgba($color: $white, $alpha: 0.5);
+        }
+    }
+
+}

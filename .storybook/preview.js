@@ -1,3 +1,4 @@
+import DarkWrap from "../src/components/decorator/DarkWrap/DarkWrap"
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -8,3 +9,7 @@ export const parameters = {
     },
   },
 }
+
+export const decorators = [
+  (Story) => <DarkWrap>{Story()}</DarkWrap>
+]
