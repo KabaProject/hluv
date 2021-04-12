@@ -14,7 +14,8 @@ export const ButtonGoDisabled = Template.bind({})
 ButtonGoDisabled.storyname = "Go Button Disabled"
 ButtonGoDisabled.args = {
     state: "disabled",
-    version: "go"
+    version: "go",
+    type: "primary"
 }
 
 export const ButtonGoEnabled = Template.bind({})

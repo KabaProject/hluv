@@ -16,7 +16,11 @@ const ButtonGo = ({state, onClick}) => {
     }
 
     return(
-        <button className={`button button-go button-go--${state}`} onClick={onClickHandler} >
+        <button 
+            className={`button button-go button-go--${state}`} 
+            onClick={onClickHandler} 
+            disabled = {state === "disabled"}
+        >
             {
                 state !== "loading" ? "GO" : <Icon icon={spinnerIcon} className="button-go__spinner"/>
             }

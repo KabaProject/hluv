@@ -65,6 +65,7 @@
         &--disabled{
             background-color: rgba($color: $white, $alpha: 0.1);
             color: rgba($color: $white, $alpha: 0.5);
+            cursor: not-allowed;
         }
     }
 
