@@ -73,6 +73,7 @@ Button.propTypes = {
     state: PropTypes.oneOf(['enabled', 'disabled', 'loading']),
     onClick: PropTypes.func,
     children: PropTypes.string,
+    link: PropTypes.string
 }
 
 export default Button

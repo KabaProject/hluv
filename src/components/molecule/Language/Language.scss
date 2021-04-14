@@ -1,0 +1,32 @@
+@import '../../../styles/colors.scss';
+
+.language{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    padding: 0 12px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba($color: $white, $alpha: 0.05);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover > &__icon{
+        transform: rotate(360deg) !important;
+        transition: all 0.75s ease-in-out;
+    }
+
+    &__text{
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+    }
+
+    &__icon{
+        font-size: 28px;
+        color: white;
+        transform: rotate(0deg) !important;
+        transition: all 0.75s ease-in-out;
+    }
+}
