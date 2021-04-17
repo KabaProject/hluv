@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/hluv/static/css/main.66b84bf1.chunk.css",
+    "main.js": "/hluv/static/js/main.97810392.chunk.js",
+    "main.js.map": "/hluv/static/js/main.97810392.chunk.js.map",
+    "runtime-main.js": "/hluv/static/js/runtime-main.f9a76e9a.js",
+    "runtime-main.js.map": "/hluv/static/js/runtime-main.f9a76e9a.js.map",
+    "static/js/2.0907c0fa.chunk.js": "/hluv/static/js/2.0907c0fa.chunk.js",
+    "static/js/2.0907c0fa.chunk.js.map": "/hluv/static/js/2.0907c0fa.chunk.js.map",
+    "static/js/3.3dfcd3b9.chunk.js": "/hluv/static/js/3.3dfcd3b9.chunk.js",
+    "static/js/3.3dfcd3b9.chunk.js.map": "/hluv/static/js/3.3dfcd3b9.chunk.js.map",
+    "index.html": "/hluv/index.html",
+    "static/css/main.66b84bf1.chunk.css.map": "/hluv/static/css/main.66b84bf1.chunk.css.map",
+    "static/js/2.0907c0fa.chunk.js.LICENSE.txt": "/hluv/static/js/2.0907c0fa.chunk.js.LICENSE.txt",
+    "static/media/Logo.9d12ac5d.svg": "/hluv/static/media/Logo.9d12ac5d.svg",
+    "static/media/Hcode.scss": "/hluv/static/media/hentai-m-bg.e4044a0a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9a76e9a.js",
+    "static/js/2.0907c0fa.chunk.js",
+    "static/css/main.66b84bf1.chunk.css",
+    "static/js/main.97810392.chunk.js"
+  ]
+}
