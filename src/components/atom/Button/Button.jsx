@@ -7,30 +7,26 @@ import { Icon } from '@iconify/react';
 import spinnerIcon from '@iconify-icons/gg/spinner';
 
 
-const ButtonGo = ({state, onClick}) => {
+const ButtonGo = ({state, link}) => {
 
-    const onClickHandler = () => {
-        if(state === "enabled"){
-            onClick()
-        }
-    }
 
     return(
-        <button 
+        <a
+            href={link}
+            target="_blank"
             className={`button button-go button-go--${state}`} 
-            onClick={onClickHandler} 
             disabled = {state === "disabled"}
         >
             {
                 state !== "loading" ? "GO" : <Icon icon={spinnerIcon} className="button-go__spinner"/>
             }
-        </button>
+        </a>
     )
 }
 
 const ButtonLink = ({type, link, children, icon}) => {
     return (
-        <a href={`https://${link}`} className={`button button-link button--${type}`}>
+        <a href={`https://${link}`} target="_blank" className={`button button-link button--${type}`}>
             {icon ? <Icon icon={icon} className="button-link__icon"/> : null}
             <span className="button-link__text">{children}</span>
         </a>

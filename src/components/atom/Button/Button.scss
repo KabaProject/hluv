@@ -44,6 +44,7 @@
         font-size: 40px;
         color: $white;
         font-weight: 600;
+        text-decoration: none;
 
         &--enabled, &--loading{
             background-color: $accent-color;

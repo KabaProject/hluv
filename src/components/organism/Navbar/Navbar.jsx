@@ -8,7 +8,7 @@ import Logo from '../../atom/Logo/Logo'
 import Button from '../../atom/Button/Button'
 import Language from '../../molecule/Language/Language'
 
-const Navbar = ({lang}) => {
+const Navbar = ({lang = "es"}) => {
     return(
         <nav className="navbar">
             <div className="navbar__logo">
